@@ -26,6 +26,7 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 80%;
+    height: 30em;
 }
 .toggle{
    padding: 2em;
@@ -33,4 +34,17 @@ h1 {
 .picture{
     margin: 0 auto;
     border: solid 1px green;
+}
+
+.toggle:hover {
+
+}
+
+/*#day2 {
+    display: none;
+}
+*/
+
+#day2:hover {
+
 }
