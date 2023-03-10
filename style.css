@@ -3,37 +3,56 @@ body {
 	flex-direction:column;
     max-width: 1920px;
     margin: 0 auto;
+    
 }
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 1em 2em;
+    background-color: rgb(239, 245, 188);
+    cursor: pointer;
 
 }
 
 .header {
     font-size: 3em ;
+    margin-left: 2em;
 }
 .description {
     display: flex;
     justify-content: space-between;
 }
-h1 {
+.name {
+    display: flex;
+   
     font-size: 2em;
 }
+.name:hover {
+    color:rgb(39, 8, 126)
+}
+
 .day{
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 30em;
+    margin: 1em auto ;
 }
 .toggle{
-   padding: 2em;
+    margin: 2em;
+}
+.toggle-open{
+
+}
+.toggle-close{
+    
 }
 .picture{
     margin: 0 auto;
     border: solid 1px green;
+}
+.picture:hover{
+    transition: ;
 }
 
 .toggle:hover {
