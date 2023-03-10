@@ -21,12 +21,13 @@ body {
 }
 .description {
     display: flex;
-    justify-content: space-between;
+    
 }
 .name {
     display: flex;
-   
+    justify-content: space-between;
     font-size: 2em;
+    width: 100%;
 }
 .name:hover {
     color:rgb(39, 8, 126)
@@ -38,32 +39,44 @@ body {
     width: 80%;
     margin: 1em auto ;
 }
-.toggle{
-    margin: 2em;
+input {
+    position: absolute;
+    right: 0;
+    
 }
-.toggle-open{
+.toggle-box{
+    margin: 1em;
+    width: 1em;
+    height: 1em;
+}
 
+.toggle-box:hover ~ .toggle-open{
+    display: block;
 }
-.toggle-close{
+.toggle-box:checked ~.toggle-close{
+    display: block;
     
 }
 .picture{
-    margin: 0 auto;
-    border: solid 1px green;
+    display: none;
+    margin: 1em auto;
+    width: 50%;
+    
 }
 .picture:hover{
     transition: ;
 }
 
-.toggle:hover {
 
-}
 
 /*#day2 {
     display: none;
 }
 */
 
+.toggle-box:checked ~ .picture{
+    display: block;
+}
 #day2:hover {
 
 }
