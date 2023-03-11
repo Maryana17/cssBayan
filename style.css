@@ -3,22 +3,25 @@ body {
 	flex-direction:column;
     max-width: 1920px;
     margin: 0 auto;
+    cursor: pointer;
     
 }
 .container {
-    width: 100%;
+    width: 80%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 1em 2em;
+    padding: 2em 2em;
     background-color: rgb(239, 245, 188);
     cursor: pointer;
 
 }
 
 .header {
-    font-size: 2em ;
+    font-size: 3em ;
     font-weight: bold;
     margin-left: 2em;
+    margin-bottom: 1em;
+
 }
 .description {
     display: flex;
@@ -27,8 +30,9 @@ body {
 .name {
     display: flex;
     justify-content: space-between;
-    font-size: 2em;
+    font-size: 3em;
     width: 100%;
+    cursor: pointer;
 }
 .name:hover {
     color:rgb(99, 5, 28)
@@ -39,45 +43,65 @@ body {
     flex-direction: column;
     width: 80%;
     margin: 1em auto ;
+    cursor: pointer;
 }
 input {
+    display: none;
     position: absolute;
-    right: 0;
+    right: 10em;
     
+}
+input:hover {
+    display: block;
 }
 .toggle-box{
-    margin: 1em;
+    margin: 2em;
     width: 1em;
     height: 1em;
-}
-
-.toggle-box:hover ~ .toggle-open{
-    display: block;
-}
-.toggle-box:checked ~.toggle-close{
-    display: block;
     
 }
+
 .picture{
     display: none;
-    margin: 1em auto;
+    margin: 2em auto;
     width: 50%;
-    
+    transform: scale(1.1) ;
+    transition: all 3s linear;
+    transition-delay: 1s;
 }
-.picture:hover{
-    transition: ;
-}
-
-
-
-/*#day2 {
-    display: none;
-}
-*/
 
 .toggle-box:checked ~ .picture{
-    display: block;
+    display: block; 
+    transform: scale(1.1) ;
+      
 }
-#day2:hover {
+/* Media запросы*/
 
+@media screen and (max-width: 1205px){
+    .header{
+        font-size: 2em;
+    }
+    .name{
+        font-size: 2em;
+    }
+    .toggle-box{
+        margin: 1em;
+    }
 }
+@media screen  and (max-width: 745px){
+    .container{
+        padding: 1em 1em;
+    }
+    .header{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+    .name{
+        font-size: 1em;
+    }
+    .day {
+        width: 85%;
+    }
+
+};
+    
