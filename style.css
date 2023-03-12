@@ -21,6 +21,7 @@ body {
     font-weight: bold;
     margin-left: 2em;
     margin-bottom: 1em;
+    padding-left: 1em;
 
 }
 .description {
@@ -54,22 +55,36 @@ body {
    height: 0;
    width: 50%;
    overflow: hidden;
+  
 }  
 .picture:target{
     height: auto;
     transform: scale(1.1) ;
-    transition: all 3s linear;
+    transition: all 2s linear;
     transition-delay: 0.5s;
 }
 
-button {
-    position: absolute;
-    right: 10em;
+hr {
+    width: 100%;
     
 }
-
-
-
+#monday{
+    display: block;
+    height: auto;
+}
+ul {
+    padding: 0;
+}
+button.open {
+    display: block;
+    right: 0;
+    width: 1%;
+}
+button.close {
+    display: block;
+    right: 0;
+    width: 1%;
+}
 
 /* Media запросы*/
 
@@ -97,6 +112,9 @@ button {
     }
     .day {
         width: 85%;
+    }
+    .picture {
+        margin: 1em auto;
     }
 
 };
