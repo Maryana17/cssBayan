@@ -1,1 +1,1 @@
-https://Maryana17.github.io/cssbayan/
+https://Maryana17.github.io/cssBayan/cssBayan/index.html
