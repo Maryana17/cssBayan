@@ -75,15 +75,31 @@ hr {
 ul {
     padding: 0;
 }
-button.open {
-    display: block;
+.open {
+    display: none;
     right: 0;
-    width: 1%;
+    width: 1em;
+    height: 1em;
+    background-color:  rgb(239, 245, 188); 
 }
-button.close {
+cursor:active .open{
     display: block;
+    
+}
+.open:hover {
+    display: none;
+}
+.close {
+    display: none;
     right: 0;
-    width: 1%;
+    width: 1em;
+    height: 1em;
+}
+
+a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Media запросы*/
